@@ -3,44 +3,81 @@ title: Intro
 nav: true
 --- 
 
-# Academic Writing
+# Tools for Academic Writing
 
-- "what you see is not what you get"
-- proprietary tools and formats 
-- separation of content/semantics and style
-    - spend less time formatting, more time writing
+### Word Processors
+
+- MS Word, [Libre Office](https://www.libreoffice.org/)
+- Google Docs
+- [Authorea](https://www.authorea.com/) (collaborative platform for academic writing featuring version control, math, data, code, DOIs, etc.)
+
+Issues: 
+
+- WYSIWYG yet "what you see is not what you get"
+- [proprietary](https://www.gnu.org/proprietary/proprietary.en.html) tools and formats 
+- content and formatting mixed
+
+### Document preparation systems
+
+- [TeX](http://tug.org/) (typesetting)
+- [LaTeX](https://www.latex-project.org/) (content markup + typesetting)
+- [Overleaf](https://www.overleaf.com/) (LaTeX online platform for collaboration)
+
+Issues:
+
+- complex with steep learning curves
+- difficult to collaborate
+
+### Code notebooks
+
+- [R Markdown](https://rmarkdown.rstudio.com/) (with [Bookdown](https://bookdown.org/) for creating larger documents)
+- [Jupyter Notebook](https://jupyter.org/) (share with [nbviewer](https://nbviewer.jupyter.org/) or [nbconvert](https://nbconvert.readthedocs.io/en/latest/))
+
+Issues: 
+
+- Language specific
+- Dependency hell
+
+### (Lightweight) Markup languages
+
+- [DocBook](https://en.wikipedia.org/wiki/DocBook)
+- [AsciiDoc](http://asciidoc.org/)
+- [Wikitext](https://en.wikipedia.org/wiki/Help:Wikitext)
+- [reStructuredText](http://docutils.sourceforge.net/docs/ref/rst/introduction.html)
+- [Textile](https://textile-lang.com/)
+- [Markdown](https://daringfireball.net/projects/markdown/) 
+
+Opportunities:
+
+- Simple to learn
+- [Plaintext](https://en.wikipedia.org/wiki/Plain_text) and open standards
+    - shareable and useable by any device with no special software or license needed
+    - preservable / sustainable - easy digital preservation and human readable
+    - version controllable - you can use the full power of Git or other version control systems
+- Separation of content/semantics and presentation
+    - spend less time formatting, more time writing - don't waste time in complex and frustrating formatting in Word that will be deleted by publishers anyway!
     - structure content as data = powerful
-    - version control GitHub
-- "markup" languages
-    - simple - don't waste time in complex and frustrating formatting in Word that will be deleted by publishers anyway. This keeps your distractions to a minimum.
-    - sharable - any device can open and read plaintext, no special software needed, unlike Word.
-    - preservable / sustainable - markdown is plaintext which is easy for digital preservation, unlike Word.
-    - version controllable - you can use the full power of Git or other version control systems, unlike Word.
 
-https://github.com/karthik/smb_git
+Example: 
+Karthik Ram, "Git can facilitate greater reproducibility and increased transparency in science", *Source Code Biol Med* 8, 7 (2013), https://doi.org/10.1186/1751-0473-8-7. 
+At <https://github.com/karthik/smb_git>
 
 # Markdown
 
-- flavors
-- editors
-- vs. LaTeX
+[Markdown](https://daringfireball.net/projects/markdown/) is a quick and simple standard to create formatted documents in plaintext, intended to be easy to write and to read.
+Developed in 2004 by John Gruber with Aaron Swartz based on how people intuitively write emails, it is designed to easily convert into HTML for the web.
+Because of it's simplicity, it is used by many websites and note taking apps to allow formatting notes, comments, and posts. 
 
-2004 [Markdown](https://daringfireball.net/projects/markdown/) (original spec Daring Fireball / John Gruber) w/ Aaron Swartz
+Markdown files are plaintext, usually with the extension `.md`, and can be edited by any text editor.
+Think of it as source code for your document, that can be compiled to generate outputs such as HTML, .docx, or PDF.
 
-Markdown is human readable as plain text–it is intuitive like writing an email. However, it is designed to render as HTML. Markdown compilers are built in to many applications (like the editors above) to generate formatted versions such as HTML, .docx, or PDF.
-Markdown is [plain text](https://en.wikipedia.org/wiki/Plain_text), it’s sort of like source code for your document. You can write it in any application that supports plain text, i.e. a text editor. When working with code you should have a good text editor.
+Markdown comes in "flavors" in specifications or implementations: 
 
-Markdown is a quick and simple way to write formatted documents in plaintext.
-It is intuitive and easy to read, but is designed to convert to HTML for easy web publishing.
-Writing in plaintext rather than [proprietary](https://www.gnu.org/proprietary/proprietary.en.html) formats such as Word has many advantages:
+- [CommonMark](https://commonmark.org/) (standardized specification)
+- [GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/) (popular style that can be used any where on GitHub and in Jekyll)
+- [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
+- [kramdown](https://kramdown.gettalong.org/syntax.html) (the Ruby markdown parser used by Jekyll)
+- [Markdown Extra](https://michelf.ca/projects/php-markdown/extra/) (PHP)
+- [MultiMarkdown](https://fletcherpenney.net/multimarkdown/)
 
-
-[Markdown](https://daringfireball.net/projects/markdown/) is a standard to simplify writing content for the web. 
-[GitHub markdown flavor](https://help.github.com/articles/basic-writing-and-formatting-syntax/) can be used any where on GitHub and in Jekyll.
-
-- [Markdown in a Minute](https://evanwill.github.io/_drafts/notes/markdown-minute.html)
-- GitHub Guide [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-# Alternatives to Word
-
-- [Authorea](https://www.authorea.com/) - platform like Google Docs for academic writing, features versions, DOI, Math, data, code driven visualizations, etc.
+Markdown parsers usually allow a mix of other types of markup inside an `.md` file, including LaTeX style math, HTML elements, making it a flexible base to write a document. 

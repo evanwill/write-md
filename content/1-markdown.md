@@ -3,18 +3,24 @@ title: MD Basics
 nav: true
 ---
 
+# Write Markdown
+
+Head to Dillinger web-based editor to practice some Markdown:
+
+{% include button.md text="Dillinger Editor" link="https://dillinger.io/" %}
+
 - headers
-    - paragraphs
-    - metadata yml block
-    - inline formatting
-    - lists (bullet, ordered, definition lists) nesting
-    - hr
-    - links
-    - images
-    - footnotes
-    - block quote, code blocks
-    - tables
-    - Math inline TeX
+- paragraphs
+- metadata yml block
+- inline formatting
+- lists (bullet, ordered, definition lists) nesting
+- hr
+- links
+- images
+- footnotes
+- block quote, code blocks
+- tables
+- Math inline TeX
 - writing tips
     - line breaks = better for git
     - citations bibliography .csl file BibTeX
