@@ -40,15 +40,12 @@ Spec:
 - Note taking: [Notable](https://notable.md/), [Simplenote](https://simplenote.com/), [Boost Note](https://boostnote.io/), [Standardnotes](https://standardnotes.org/), [Joplin](https://joplinapp.org/)
 - Visual editors: stand alone desktop apps with familiar GUI interface and builtin output options 
     - [Zettlr](https://www.zettlr.com/) (academic oriented, with Zotero support, spellcheck, [docs](https://docs.zettlr.com/)) 
-    - [Mark Text](https://marktext.app/), [Remarkable](https://remarkableapp.github.io/index.html), [Typora](https://www.typora.io/) 
+    - [Mark Text](https://marktext.app/), [Remarkable](https://remarkableapp.github.io/index.html), [Typora](https://www.typora.io/) (oriented towards writers)
 
 ## Git & GitHub
 
-[GitHub](https://github.com/){:target="_blank"} is a popular web service for hosting Git repositories--with benefits!
-It provides a handy web interface for editing and collaborating on repos, as well as, built in project management features and [free static web hosting](https://pages.github.com/){:target="blank"} powered by [Jekyll](https://jekyllrb.com/){:target="blank"}.
+[Git](https://git-scm.com/) is the most popular version control system, and works great to track Markdown writing projects.
+[GitHub](https://github.com/) is a popular web service for hosting Git repositories--with benefits!
+It provides a handy web interface for editing and collaborating on repos, as well as, built in project management features and [free static web hosting](https://pages.github.com/) powered by [Jekyll](https://jekyllrb.com/).
 Accounts are free.
-To learn more check out Hello World on [GitHub Guides](https://guides.github.com/){:target="_blank"} or [GitHub Training](https://services.github.com/on-demand/){:target="_blank"}.
-
-## YAML
-
-[YAML](http://www.yaml.org/) is a human readable plain text data format.
+To learn more check out Hello World on [GitHub Guides](https://guides.github.com/) or [GitHub Training](https://services.github.com/on-demand/).

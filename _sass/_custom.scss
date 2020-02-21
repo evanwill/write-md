@@ -40,3 +40,9 @@ a {
 }
 /* remove margin in alerts */
 .alert p:last-of-type { margin-bottom: 0; }
+/* code blocks */
+pre.highlight {
+    background-color: #e6e6e6;
+    padding: .5rem;
+    border-radius: .25rem;
+}
