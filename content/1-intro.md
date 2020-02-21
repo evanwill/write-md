@@ -7,7 +7,7 @@ nav: true
 
 Scholarly writing workflows generally center around `.docx` as the defacto standard.
 However, traditional word processors are *NOT* the only way to write a paper, and can impose significant limitations on how we collaborate and communicate.
-Below we look at some of the options and issues as a frame, before learning about how Markdown can be used for academic writing.
+Below we look at some of the options and issues as a frame, before exploring about how Markdown can be used for academic writing.
 
 ### Word Processors
 
@@ -17,7 +17,7 @@ Below we look at some of the options and issues as a frame, before learning abou
 
 MS Word has been the standard tool for writing academic papers for many years.
 However, being familiar and pervasive doesn't mean it is truly easy to use!
-Anyone who has spent hours trying to figure out some odd formatting quirk, seen the entire theme disappear when pasting something in, or opened a document from a much earlier software version will understand some of the limitations of these platforms.
+Anyone who has spent hours trying to figure out some odd formatting quirk, seen the entire theme disappear when pasting something in, or opened a document from an earlier software version will understand some of the limitations of these platforms.
 
 First, in a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG){:target="_blank" rel="noopener"} editor content and presentation are mixed, semantic structure of the document is easy to confuse with styling.
 Formatting is hidden in the interface and can be difficult to sort out, meaning often "what you see is not what you get" and you can't figure out why.
@@ -33,7 +33,7 @@ These situations presents challenges to collaboration, innovation, and sustainab
 - [Overleaf](https://www.overleaf.com/){:target="_blank" rel="noopener"} (LaTeX online platform for collaboration)
 
 TeX and LaTeX have long been the standard for academic writing in fields that need to represent mathematical equations.
-They are extremely powerful for creating PDF type documents, but are complex with steep learning curves which can make collaboration difficult. 
+They are extremely powerful for creating PDF/print documents, but are complex with steep learning curves which can make collaboration difficult. 
 The source code of LaTeX documents are not necessarily easy to read or preview until compiled.
 
 ### Code notebooks
@@ -49,7 +49,7 @@ However, they are situated in ecosystems that require language specific skills, 
 
 Lightweight markup languages seek to be easy to write and read, while providing expressive semantic markup that can be used to transform the marked up content into different formats. 
 
-- [DocBook](https://en.wikipedia.org/wiki/DocBook){:target="_blank" rel="noopener"}
+- [DocBook](https://en.wikipedia.org/wiki/DocBook){:target="_blank" rel="noopener"} (XML-based, not light)
 - [AsciiDoc](http://asciidoc.org/){:target="_blank" rel="noopener"}
 - [Wikitext](https://en.wikipedia.org/wiki/Help:Wikitext){:target="_blank" rel="noopener"}
 - [reStructuredText](http://docutils.sourceforge.net/docs/ref/rst/introduction.html){:target="_blank" rel="noopener"}
@@ -58,7 +58,7 @@ Lightweight markup languages seek to be easy to write and read, while providing 
 
 Opportunities:
 
-- Simple to learn
+- Simple(ish) to learn
 - [Plaintext](https://en.wikipedia.org/wiki/Plain_text){:target="_blank" rel="noopener"} and open standards -based
     - shareable and useable by any device with no special software or license needed
     - preservable / sustainable - easy digital preservation and human readable

@@ -157,7 +157,6 @@ Both kinds of lists can be nested by tabbing in a level.
 {% endcapture %}
 {% include card.md text=lists %}
 
-
 {% include alert.md text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. If you are getting unexpected results when rendering, check your white space. For example, leaving two spaces at the end of a line will insert a `<br>` break." color="warning" %}
 
 ## Inline Elements
@@ -181,7 +180,7 @@ Here are some more things to try:
 
 ```
 Code can be highlighted inline with `backticks`.
-Or make a code block opening with three ``` alone on a line 
+Or make a code block opening with three backticks alone on a line 
 and close with three more on a line. 
 Add the language name next to the top backticks for highlighting.
 
@@ -200,27 +199,3 @@ Tables looks like:
 | value | value | value |
 
 ```
-
-# Markdown Editor
-
-Now that you are a Markdown expert, you probably want a good editor!
-
-There are many Markdown specific editors and note taking apps (see [Markdown Tools]({{ '/content/4-resources.html#markdown-tools' | relative_url }})).
-These often have preview, export, and syncing options built in which can be helpful features. 
-However, Markdown can be written by any text editor and most people will probably choose to write in a code editor.
-
-For basic writing, Windows [Notepad++](https://notepad-plus-plus.org/){:target="_blank" rel="noopener"}, Mac TextEdit, or Linux Gedit are sufficient.
-For larger projects or notes, a more complete code editor might be helpful.
-
-Open-source cross platform suggestions:
-
-- [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener"} 
-    - Preview Markdown: `Ctrl+Shift+V` 
-    - Spellcheck: install "Code Spell Checker" extension
-    - Extensions: checkout [markdown-preview-enhanced](https://github.com/shd101wyy/markdown-preview-enhanced){:target="_blank" rel="noopener"}
-- [Atom](https://atom.io/){:target="_blank" rel="noopener"} 
-    - Preview Markdown: `Ctrl+Shift+M` 
-    - Spellcheck: comes built in, with cursor on misspelled word, hit `Ctrl+Shift+;` to see suggestions
-    - Export: right click preview to "Save as HTML"
-
-Remember to set your indentation to use 4 spaces (rather than tabs).
