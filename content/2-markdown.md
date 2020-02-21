@@ -184,14 +184,14 @@ Or make a code block opening with three backticks alone on a line
 and close with three more on a line. 
 Add the language name next to the top backticks for highlighting.
 
-Horizontal rule:
+## Horizontal rule
 
 -------------
 
 > Block quote.
 > Continuing the quote.
 
-Tables looks like:
+## Tables
 
 | column1 | column2 | column3 |
 | --- | --- | --- |

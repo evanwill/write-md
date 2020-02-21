@@ -21,7 +21,7 @@ The [Pandoc User's Guide](https://pandoc.org/MANUAL.html) provides the huge rang
     - Linux: most likely called "Terminal"
 3. In the terminal window, type `pandoc --version` and press return
 4. Next, type `pandoc test.md -o test.html` and press return
-5. Try `pandoc test.md -o test.docx`
+5. Try `pandoc test.md -o test.docx` (write your draft in Markdown, then submit in `.docx`?)
 
 These examples demonstrate the basic anatomy of Pandoc commands:
 
@@ -111,4 +111,3 @@ $$ x^n + y^n = z^n $$
 - Code [syntax highlighting](https://pandoc.org/MANUAL.html#syntax-highlighting) 
 - [Citations in Pandoc Markdown](https://pandoc.org/MANUAL.html#citations) (connect bibliography file exported from citation manager for automatic citation styles)
 - Create [Slide shows](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
-

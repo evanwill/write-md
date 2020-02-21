@@ -66,6 +66,7 @@ Opportunities:
 - Separation of content/semantics and presentation
     - spend less time formatting, more time writing - don't waste time in complex and frustrating formatting in Word that will be deleted by publishers anyway!
     - structure content as data = powerful
+- Flexible outputs - ready for web, ebooks, blogs, not just PDFs.
 
 Example: 
 Karthik Ram, "Git can facilitate greater reproducibility and increased transparency in science", *Source Code Biol Med* 8, 7 (2013), https://doi.org/10.1186/1751-0473-8-7. Available at <https://github.com/karthik/smb_git>
