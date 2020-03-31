@@ -43,6 +43,9 @@ defaults:
   - scope:
       path: "content"
     values:
-      layout: "default"
+      layout: "page"
+
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed

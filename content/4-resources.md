@@ -40,7 +40,7 @@ Spec:
 - Note taking: [Notable](https://notable.md/), [Simplenote](https://simplenote.com/), [Boost Note](https://boostnote.io/), [Standardnotes](https://standardnotes.org/), [Joplin](https://joplinapp.org/)
 - Visual editors: stand alone desktop apps with familiar GUI interface and builtin output options 
     - [Zettlr](https://www.zettlr.com/) (academic oriented, with Zotero support, spellcheck, [docs](https://docs.zettlr.com/)) 
-    - [Mark Text](https://marktext.app/), [Remarkable](https://remarkableapp.github.io/index.html), [Typora](https://www.typora.io/) (oriented towards writers)
+    - [Mark Text](https://marktext.app/), [Remarkable](https://remarkableapp.github.io/index.html), [ghostwriter](https://wereturtle.github.io/ghostwriter/), [Typora](https://www.typora.io/) (oriented towards writers)
 
 ## Git & GitHub
 
