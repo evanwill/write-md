@@ -41,6 +41,7 @@ Spec:
 - Visual editors: stand alone desktop apps with familiar GUI interface and builtin output options 
     - [Zettlr](https://www.zettlr.com/) (academic oriented, with Zotero support, spellcheck, [docs](https://docs.zettlr.com/)) 
     - [Mark Text](https://marktext.app/), [Remarkable](https://remarkableapp.github.io/index.html), [ghostwriter](https://wereturtle.github.io/ghostwriter/), [Typora](https://www.typora.io/) (oriented towards writers)
+- Libraries: the Demo editor uses [markdown-it](https://github.com/markdown-it/markdown-it) library to render Markdown using JS.
 
 ## Git & GitHub
 
