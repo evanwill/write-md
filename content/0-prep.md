@@ -10,16 +10,16 @@ If you want to edit Markdown and make PDFs, you will want to install Pandoc and 
 
 ## Install Pandoc
 
-[Pandoc](https://pandoc.org/) is a command line utility to translate between many formats and generate new output versions, such as PDFs (via LaTeX).
+[Pandoc](https://pandoc.org/){:target="_blank" rel="noopener"} is a command line utility to translate between many formats and generate new output versions, such as PDFs (via LaTeX).
 
 To create PDFs from Markdown, you will need Pandoc plus a LaTeX distribution.
-Check the [Installing Pandoc](https://pandoc.org/installing.html) guide for full details. 
+Check the [Installing Pandoc](https://pandoc.org/installing.html){:target="_blank" rel="noopener"} guide for full details. 
 Here is the suggested method:
 
 {% capture win %}
-1. Download the latest installer release for your platform from [Pandoc Releases](https://github.com/jgm/pandoc/releases). Windows will be `pandoc-2.9.2-windows-x86_64.msi` and Mac `pandoc-2.9.2-macOS.pkg`.
+1. Download the latest installer release for your platform from [Pandoc Releases](https://github.com/jgm/pandoc/releases){:target="_blank" rel="noopener"}. Windows will be `pandoc-2.9.2-windows-x86_64.msi` and Mac `pandoc-2.9.2-macOS.pkg`.
 2. Run the Pandoc installer.
-3. Download and install a LaTaX distribution. For Windows [MiKTeX](https://miktex.org/download), for Mac [BasicTeX](http://www.tug.org/mactex/morepackages.html). This step can take a long time!
+3. Download and install a LaTaX distribution. For Windows [MiKTeX](https://miktex.org/download){:target="_blank" rel="noopener"}, for Mac [BasicTeX](http://www.tug.org/mactex/morepackages.html){:target="_blank" rel="noopener"}. This step can take a long time!
 {% endcapture %}
 {% include card.md text=win header="Windows and Mac" %}
 

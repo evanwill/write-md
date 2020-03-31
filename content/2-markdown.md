@@ -5,9 +5,16 @@ nav: true
 
 # Write Markdown
 
-Head to Dillinger web-based editor to practice some Markdown:
+Head to the [Demo editor]({{ '/content/5-editor.html' | relative_url }}){:target="_blank" rel="noopener"} to practice some Markdown basics.
 
-{% include button.md text="Dillinger Editor" link="https://dillinger.io/" color="success" %}
+{% capture webeditor %}
+Alternatively, try using one of the web-based Markdown editors 
+[Dillinger](https://dillinger.io/){:target="_blank" rel="noopener"}
+or 
+[StackEdit](https://stackedit.io/){:target="_blank" rel="noopener"}.
+However, by default both do not join lines of a paragraph correctly (unless exported as a PDF).
+{% endcapture %}
+{% include alert.md text=webeditor color="secondary" %}
 
 ## Basics  
 
