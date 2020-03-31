@@ -3,3 +3,4 @@
 <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 <!-- load other optional js -->
 {% if page.layout == "search" %}{% include js/lunr-js.html %}{% endif %}
+{% if page.layout == "editor" %}{% include js/editor-js.html %}{% endif %}

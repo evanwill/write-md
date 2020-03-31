@@ -1,0 +1,18 @@
+---
+layout: default
+--- 
+<div class="container-fluid my-4">
+    {{ content }}
+    <div class="row">
+        <div class="col-md-6">
+            <textarea id="markdownInput" class="form-control" rows="15"></textarea>
+            <p class="text-center mt-2">
+                <button id="renderMdBtn" class="btn btn-success" type="button">Render Markdown</button>
+                <button id="clearMdBtn" class="btn btn-secondary" type="button">Clear</button>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div id="htmlOutput"></div>
+        </div>
+    </div>
+</div>
