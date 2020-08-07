@@ -17,9 +17,13 @@ Check the [Installing Pandoc](https://pandoc.org/installing.html){:target="_blan
 Here is the suggested method:
 
 {% capture win %}
-1. Download the latest installer release for your platform from [Pandoc Releases](https://github.com/jgm/pandoc/releases){:target="_blank" rel="noopener"}. Windows will be `pandoc-2.9.2-windows-x86_64.msi` and Mac `pandoc-2.9.2-macOS.pkg`.
-2. Run the Pandoc installer.
-3. Download and install a LaTaX distribution. For Windows [MiKTeX](https://miktex.org/download){:target="_blank" rel="noopener"}, for Mac [BasicTeX](http://www.tug.org/mactex/morepackages.html){:target="_blank" rel="noopener"}. This step can take a long time!
+1. Download and install a LaTeX distribution. These are big packages so this step can take a long time!
+    - For Windows [MiKTeX](https://miktex.org/download){:target="_blank" rel="noopener"}
+    - For Mac [BasicTeX](http://www.tug.org/mactex/morepackages.html){:target="_blank" rel="noopener"}.
+2. Download the latest installer release for your platform from [Pandoc Releases](https://github.com/jgm/pandoc/releases){:target="_blank" rel="noopener"}. 
+    - For Windows look for the extension `.msi`, e.g. `pandoc-2.10.1-windows-x86_64.msi`
+    - For Mac look for the extension `.pkg`, e.g. `pandoc-2.10.1-macOS.pkg`
+3. Run the Pandoc installer.
 {% endcapture %}
 {% include card.md text=win header="Windows and Mac" %}
 
