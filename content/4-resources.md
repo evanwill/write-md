@@ -5,19 +5,13 @@ nav: true
 
 ## Markdown Tutorials
 
-- CommonMark [10 minute Markdown Tutorial](https://commonmark.org/help/tutorial/)
+- CommonMark [Markdown in 60 seconds](https://commonmark.org/help/) or [10 minute Markdown Tutorial](https://commonmark.org/help/tutorial/)
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Sustainable Authorship in Plain Text using Pandoc and Markdown](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
 
 ## Markdown Reference
 
-Quick: 
-
-- CommonMark [Markdown in 60 seconds](https://commonmark.org/help/)
 - [GitHub markdown flavor](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (can be used any where on GitHub)
-
-Spec:
-
 - [Markdown](https://daringfireball.net/projects/markdown/) (original spec Daring Fireball / John Gruber)
 - [CommonMark](https://commonmark.org/)
 - [kramdown](https://kramdown.gettalong.org/syntax.html) (the Ruby markdown parser used by Jekyll)
@@ -29,6 +23,7 @@ Spec:
     - [Dillinger](https://dillinger.io/) (sync with cloud services, collaborate, comments, LaTeX Math, UML diagrams, ABC notation for music)
     - [StackEdit](https://stackedit.io/) (sync with cloud services, collaborate, comments, LaTeX Math, UML diagrams, ABC notation for music)
     - [HackMD](https://hackmd.io/) Markdown realtime collaboration platform (self-hosted open source version [CodiMD](https://github.com/hackmdio/codimd))
+- Publishing workflows: [Manubot](https://manubot.org/), [Quarto](https://quarto.org/)
 - Note taking: [Obsidian](https://obsidian.md/), [Notable](https://notable.md/), [Simplenote](https://simplenote.com/), [Standardnotes](https://standardnotes.org/), [Joplin](https://joplinapp.org/)
 - Visual editors: stand alone desktop apps with familiar GUI interface and builtin output options 
     - [Zettlr](https://www.zettlr.com/) (academic oriented, with Zotero support, spellcheck) 
