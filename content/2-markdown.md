@@ -1,17 +1,15 @@
 ---
-title: Markdown
-nav: true
+title: Write Markdown
+nav: Markdown
 ---
 
-# Write Markdown
-
-Head to the [Demo editor]({{ '/content/5-editor.html' | relative_url }}){:target="_blank" rel="noopener"} to practice some Markdown basics.
+Head to the [Demo editor]({{ '/content/5-editor.html' | relative_url }}) to practice some Markdown basics.
 
 {% capture webeditor %}
 Alternatively, try using one of the web-based Markdown editors 
-[Dillinger](https://dillinger.io/){:target="_blank" rel="noopener"}
+[Dillinger](https://dillinger.io/)
 or 
-[StackEdit](https://stackedit.io/){:target="_blank" rel="noopener"}.
+[StackEdit](https://stackedit.io/).
 However, by default both do not join lines of a paragraph correctly (unless exported as a PDF).
 {% endcapture %}
 {% include alert.html text=webeditor color="secondary" %}

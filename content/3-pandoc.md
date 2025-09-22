@@ -1,9 +1,7 @@
 ---
-title: Pandoc
-nav: true
+title: Working with Pandoc
+nav: Pandoc
 ---
-
-# Working with Pandoc
 
 Pandoc can take an myriad of input formats and produce a equally large variety of outputs. 
 Under the hood "readers" parse an input format into an internal abstract model from which a "writer" then generates the new output format.

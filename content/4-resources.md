@@ -3,8 +3,6 @@ title: Resources
 nav: true
 ---
 
-# Resources
-
 ## Pandoc
 
 - [Pandoc](https://pandoc.org/)
