@@ -14,7 +14,7 @@ or
 [StackEdit](https://stackedit.io/){:target="_blank" rel="noopener"}.
 However, by default both do not join lines of a paragraph correctly (unless exported as a PDF).
 {% endcapture %}
-{% include alert.md text=webeditor color="secondary" %}
+{% include alert.html text=webeditor color="secondary" %}
 
 ## Basics  
 
@@ -43,7 +43,7 @@ Header Two
 </div>
 </div>
 {% endcapture %}
-{% include card.md text=setext title="Setext-style" %}
+{% include card.html text=setext title="Setext-style" %}
 
 Setext style headers are intuitive, however, ATX style provides more control and are much more commonly used. 
 ATX headers range from level one to six, with one being the most important.
@@ -68,7 +68,7 @@ ATX headers range from level one to six, with one being the most important.
 </div>
 </div>
 {% endcapture %}
-{% include card.md text=atxtext title="ATX-style" %}
+{% include card.html text=atxtext title="ATX-style" %}
 
 **Paragraphs** don't require any special markup.
 For example:
@@ -98,7 +98,7 @@ This gives you the option to write a paragraph all on one line
 or to put each sentence on its own line.
 Splitting the sentences can make editing and version control easier. 
 {% endcapture %}
-{% include card.md text=par %}
+{% include card.html text=par %}
 
 A **bullet list** is created using `*`, `+`, or `-`, followed by a space.
 Put each list item on a new line.
@@ -162,9 +162,9 @@ Both kinds of lists can be nested by tabbing in a level.
 </div>
 </div>
 {% endcapture %}
-{% include card.md text=lists %}
+{% include card.html text=lists %}
 
-{% include alert.md text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. If you are getting unexpected results when rendering, check your white space. For example, leaving two spaces at the end of a line will insert a `<br>` break." color="warning" %}
+{% include alert.html text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. If you are getting unexpected results when rendering, check your white space. For example, leaving two spaces at the end of a line will insert a `<br>` break." color="warning" %}
 
 ## Inline Elements
 

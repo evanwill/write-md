@@ -25,7 +25,7 @@ Here is the suggested method:
     - For Mac look for the extension `.pkg`, e.g. `pandoc-2.10.1-macOS.pkg`
 3. Run the Pandoc installer.
 {% endcapture %}
-{% include card.md text=win header="Windows and Mac" %}
+{% include card.html text=win header="Windows and Mac" %}
 
 {% capture lin %}
 Pandoc and LaTeX are available in most distro's repositories. 
@@ -33,7 +33,7 @@ These might not be most up-to-date versions, but are the best way to install.
 
 On Ubuntu: `sudo apt install pandoc texlive texlive-fonts-extra texlive-xetex`
 {% endcapture %}
-{% include card.md text=lin header="Linux" %}
+{% include card.html text=lin header="Linux" %}
 
 ## Markdown Editor
 

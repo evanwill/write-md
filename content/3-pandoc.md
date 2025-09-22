@@ -60,7 +60,7 @@ Now try a new font:
 Font size can be controlled using `-V fontsize=12pt`, however, the default template only supports sizes 10, 11, or 12. 
 More sizes are supported using the extsize package (8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt) which can be used by adding `-V documentclass=extarticle` plus the desired `fontsize`.
 
-{% include alert.md text="The default LaTeX engine requires specifically prepared fonts (usually stored with a `.sty` extension). See [LaTeX Font Catalogue](https://tug.org/FontCatalogue/) for options. However, figuring out the fonts available on your system, and their correct names can be tricky ([suggestions](https://evanwill.github.io/_drafts/notes/pandoc.html)). " color="warning" %}
+{% include alert.html text="The default LaTeX engine requires specifically prepared fonts (usually stored with a `.sty` extension). See [LaTeX Font Catalogue](https://tug.org/FontCatalogue/) for options. However, figuring out the fonts available on your system, and their correct names can be tricky ([suggestions](https://evanwill.github.io/_drafts/notes/pandoc.html)). " color="warning" %}
 
 ## YAML Metadata 
 
