@@ -30,6 +30,22 @@ nav: true
     - [ghostwriter](https://ghostwriter.kde.org/), [Typora](https://www.typora.io/) (oriented towards writers)
 - Libraries: the Demo editor uses [markdown-it](https://github.com/markdown-it/markdown-it) library to render Markdown using JS.
 
+## Accessibility 
+
+LaTeX and Pandoc: 
+
+- Pandoc [Accessible PDFs and PDF archiving standards](https://pandoc.org/MANUAL.html#accessible-pdfs-and-pdf-archiving-standards)
+- [An introduction to tagged PDF files: internals and the challenges of accessibility](https://www.overleaf.com/learn/latex/An_introduction_to_tagged_PDF_files%3A_internals_and_the_challenges_of_accessibility), Overleaf
+- [LaTeX articles about PDF Accessibility](https://www.latex-project.org/publications/indexbytopic/pdf/) (improved accessibility is a focus for the LaTeX3 project, the next version of LaTeX)
+
+Homework and LMS:
+
+- [Making Homework Write-up Accessible](https://create.uw.edu/a11y-in-action/accessible-courses/making-homework-write-up-accessible/) (essentially, use Pandoc to create HTML rather than PDFs), University of Washington
+- [Using Pandoc to Convert LaTeX to HTML and MathML](https://sc.edu/about/offices_and_divisions/digital-accessibility/toolbox/math/pandoc/), University of South Carolina
+- [LaTeX Accessibility Guide](https://ets.osu.edu/digital-accessibility/latex-accessibility-guide), OSU Engineering
+- [Creating Accessible LaTeX Documents](https://libguides.gvsu.edu/LaTeX/accessibility), GVSU Library
+
+
 --------------------
 
 ## Install Pandoc

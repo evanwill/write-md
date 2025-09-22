@@ -41,7 +41,8 @@ The basic anatomy of a Pandoc command looks like:
 
 For example: 
 
-- Convert to a DOCX: `pandoc markdown-demo.md -o markdown-demo.docx`
+- Convert to DOCX: `pandoc markdown-demo.md -o markdown-demo.docx`
+- Convert to ODT: `pandoc markdown-demo.md -o markdown-demo.odt`
 - Convert to HTML: `pandoc markdown-demo.md -o markdown-demo.html`
 
 Pandoc will use the extensions of the input and output file names to guess the markup format.

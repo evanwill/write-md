@@ -347,6 +347,8 @@ If you ever need to have Markdown ignore a character that would normally be part
 
 For example, `\*with asterisks\*` will be \*with asterisks\*.
 
+----------
+
 ## Markdown Flavors
 {:.mt-5}
 
@@ -361,3 +363,26 @@ Some common flavors:
 
 So exactly what you can include in your Markdown writing depends on what tools you are using to process it.
 If you want your Markdown to be interoperable between tools and platforms, keep to the basics!
+
+## Semantics and Accessibility
+{:.mt-5}
+
+It is important to remember that when using Markdown we are trying to *semantically* mark up our text content. 
+The headings, inline formatting, and elements are not just for the *look*, but indicate the meaning and function of the text.
+This has the advantage of separating semantics and presentation styles, which can make it easier to write and create beautiful outputs.
+
+To create useable, accessible documents, be sure to follow best practices for the markup. 
+
+- Use Headings 
+    - Start with heading 1 (the most important heading, generally the title).
+    - Follow a sequential heading hierarchy 1 through 6 with out skipping a level. You can jump back up!
+    - Heading indicate structure, not just style formatting.
+    - Headings should break up the text into meaningful, readable chunks.
+    - Headings should be clear and descriptive, helping people understand the content and organization (without reading the whole page!)
+- Write quality alt text for all images
+    - Be sure to convey the visual information presented by the image in a clear and concise form.
+    - For charts and data visualizations be sure to include a short description of the content, chart type, and purpose. Try to provide the data as a table in addition to the chart.
+    - [Step-by-Step Instructions for Writing Alt Text](https://sc.edu/about/offices_and_divisions/digital-accessibility/toolbox/best_practices/alternative_text/step-by-step-instructions-alt-text/index.php), University of South Carolina
+- Use descriptive text in hyperlinks
+    - Never create a link with "click here"!
+    - Readers eyes jump to links in text, be sure to make the content meaningful.
