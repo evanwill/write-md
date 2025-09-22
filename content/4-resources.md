@@ -3,16 +3,10 @@ title: Resources
 nav: true
 ---
 
-## Pandoc
-
-- [Pandoc](https://pandoc.org/)
-- [Pandoc with GitHub Actions](https://github.com/pandoc/pandoc-action-example)
-
 ## Markdown Tutorials
 
 - CommonMark [10 minute Markdown Tutorial](https://commonmark.org/help/tutorial/)
 - [Markdown Guide](https://www.markdownguide.org/)
-- GitHub Guide [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 - [Sustainable Authorship in Plain Text using Pandoc and Markdown](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
 
 ## Markdown Reference
@@ -20,8 +14,7 @@ nav: true
 Quick: 
 
 - CommonMark [Markdown in 60 seconds](https://commonmark.org/help/)
-- [GitHub markdown flavor](https://help.github.com/articles/basic-writing-and-formatting-syntax/) can be used any where on GitHub and in Jekyll.
-- [Markdown in a Minute](https://evanwill.github.io/_drafts/notes/markdown-minute.html)
+- [GitHub markdown flavor](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (can be used any where on GitHub)
 
 Spec:
 
@@ -31,20 +24,44 @@ Spec:
 
 ## Markdown Tools
 
+- Text editors: you don't need a fancy tool! Markdown can be written by any text editor. For basic writing, Windows [Notepad++](https://notepad-plus-plus.org/), Mac TextEdit, or Linux Gedit are sufficient. For larger projects or notes, a more complete code editor might be helpful such as [Visual Studio Code](https://code.visualstudio.com/).
 - Web app editors:
     - [Dillinger](https://dillinger.io/) (sync with cloud services, collaborate, comments, LaTeX Math, UML diagrams, ABC notation for music)
     - [StackEdit](https://stackedit.io/) (sync with cloud services, collaborate, comments, LaTeX Math, UML diagrams, ABC notation for music)
     - [HackMD](https://hackmd.io/) Markdown realtime collaboration platform (self-hosted open source version [CodiMD](https://github.com/hackmdio/codimd))
-- Note taking: [Notable](https://notable.md/), [Simplenote](https://simplenote.com/), [Boost Note](https://boostnote.io/), [Standardnotes](https://standardnotes.org/), [Joplin](https://joplinapp.org/)
+- Note taking: [Obsidian](https://obsidian.md/), [Notable](https://notable.md/), [Simplenote](https://simplenote.com/), [Standardnotes](https://standardnotes.org/), [Joplin](https://joplinapp.org/)
 - Visual editors: stand alone desktop apps with familiar GUI interface and builtin output options 
-    - [Zettlr](https://www.zettlr.com/) (academic oriented, with Zotero support, spellcheck, [docs](https://docs.zettlr.com/)) 
-    - [Mark Text](https://marktext.app/), [Remarkable](https://remarkableapp.github.io/index.html), [ghostwriter](https://wereturtle.github.io/ghostwriter/), [Typora](https://www.typora.io/) (oriented towards writers)
+    - [Zettlr](https://www.zettlr.com/) (academic oriented, with Zotero support, spellcheck) 
+    - [ghostwriter](https://ghostwriter.kde.org/), [Typora](https://www.typora.io/) (oriented towards writers)
 - Libraries: the Demo editor uses [markdown-it](https://github.com/markdown-it/markdown-it) library to render Markdown using JS.
 
-## Git & GitHub
+--------------------
 
-[Git](https://git-scm.com/) is the most popular version control system, and works great to track Markdown writing projects.
-[GitHub](https://github.com/) is a popular web service for hosting Git repositories--with benefits!
-It provides a handy web interface for editing and collaborating on repos, as well as, built in project management features and [free static web hosting](https://pages.github.com/) powered by [Jekyll](https://jekyllrb.com/).
-Accounts are free.
-To learn more check out Hello World on [GitHub Guides](https://guides.github.com/) or [GitHub Training](https://services.github.com/on-demand/).
+## Install Pandoc
+
+[Pandoc](https://pandoc.org/) is a command line utility to translate between many formats and generate new output versions, such as PDFs (via LaTeX).
+
+To create PDFs from Markdown, you will need Pandoc plus a LaTeX distribution.
+Check the [Installing Pandoc](https://pandoc.org/installing.html) guide for full details. 
+Here is the suggested method:
+
+{% capture win %}
+1. Download and install a LaTeX distribution. These are big packages so this step can take a long time!
+    - For Windows [MiKTeX](https://miktex.org/download)
+    - For Mac [BasicTeX](http://www.tug.org/mactex/morepackages.html).
+2. Download the latest installer release for your platform from [Pandoc Releases](https://github.com/jgm/pandoc/releases). 
+    - For Windows look for the extension `.msi`, e.g. `pandoc-2.10.1-windows-x86_64.msi`
+    - For Mac look for the extension `.pkg`, e.g. `pandoc-2.10.1-macOS.pkg`
+3. Run the Pandoc installer.
+{% endcapture %}
+{% include card.html text=win header="Windows and Mac" %}
+
+{% capture lin %}
+Pandoc and LaTeX are available in most distro's repositories. 
+These might not be most up-to-date versions, but are the best way to install. 
+
+On Ubuntu: `sudo apt install pandoc texlive texlive-fonts-extra texlive-xetex`
+{% endcapture %}
+{% include card.html text=lin header="Linux" %}
+
+- [Pandoc with GitHub Actions](https://github.com/pandoc/pandoc-action-example)
