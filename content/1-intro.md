@@ -24,6 +24,8 @@ Second, MS Word is a [proprietary](https://www.gnu.org/proprietary/proprietary.e
 Tools like Google Docs are proprietary platforms with unclear privacy, security, and ownership.
 These situations presents challenges to collaboration, innovation, and sustainability.
 
+*You can write in Markdown and convert into DOCX and other formats...*
+
 ## Document Preparation Systems
 
 - Software: [LaTeX](https://www.latex-project.org/) ([ConTeXt](https://wiki.contextgarden.net/Main_Page), [LuaTeX](https://www.luatex.org/), or others that build on top of [TeX](https://tug.org/))
@@ -39,7 +41,9 @@ The source code of LaTeX documents are not necessarily easy to read or preview u
 Importantly, LaTeX was designed for high quality *PRINT* preparation--unfortunately this means the PDFs it generates are often not accessible by default and might not be the best for digital distribution.
 If you are creating PDFs for courses or learning management systems, you will need to carefully ensure it meets accessibility requirements!
 
-Some new alternatives have been developing, such as [Typst](https://typst.app/).
+Some new alternatives have been developing, such as [Typst](https://typst.app/), to provide a more modern approach.
+
+*You can write content in Markdown and use LaTeX to export print versions...*
 
 ## Code Notebooks
 
@@ -50,6 +54,8 @@ Some new alternatives have been developing, such as [Typst](https://typst.app/).
 If you are writing about research involving code and visualizations, code notebooks are a great option. 
 These systems integrate Markdown (or other lightweight markup language) with code blocks to create documents with live or rendered code.
 However, they are situated in ecosystems that require language specific skills, and can result in "dependency hell" if not correctly packaged, which are issues for sharing and sustainability. 
+
+*These systems already integrate Markdown...*
 
 ## Lightweight Markup languages
 
@@ -86,17 +92,4 @@ Originally developed in 2004 by John Gruber with Aaron Swartz based on how peopl
 Markdown files are plaintext, usually with the extension `.md`, and can be edited by any text editor.
 Think of it as source code for your document, that can be compiled to generate outputs such as HTML, .docx, or PDF.
 
-Because of it's simplicity and flexibility, a growing number of websites, note taking apps, publishing systems, and code notebooks use Markdown to format content, making it a powerful, cross-platform option for academic and tech writing. 
-
-## Flavors
-
-It is important to keep in mind that Markdown isn't a formal standard, but comes in "flavors" from various specifications or implementations that add additional features. 
-Some common flavors:
-
-- [CommonMark](https://commonmark.org/) (standardized specification)
-- [GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/) (popular style that can be used any where on GitHub and in Jekyll)
-- [R Markdown](https://rmarkdown.rstudio.com/){:target="_blank" rel="noopener"} (RStudio's mix of R code blocks and Markdown)
-- [kramdown](https://kramdown.gettalong.org/syntax.html) (the Ruby markdown parser used by Jekyll)
-- [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) (document-centric extensions)
-
-One of the benefits of these various Markdown parsers is that they usually allow a mix of other types of markup inside an `.md` file, including LaTeX style math, HTML elements, and code blocks making it a flexible base to write an academic document in an efficient manner.
+Because of it's simplicity and flexibility, a growing number of websites, note taking apps, code notebooks, and publishing systems use Markdown to format content, making it a powerful, cross-platform option for academic writing--there are applications through out the research and publishing ecosystem! 

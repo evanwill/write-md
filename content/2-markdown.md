@@ -10,6 +10,8 @@ Markdown provides a set of basic conventions to mark this semantic structure mor
 
 Head to the [Demo editor]({{ '/content/5-editor.html' | relative_url }}) or [Dillinger](https://dillinger.io/) web-based editor to practice some Markdown basics.
 
+{% include alert.html text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. If you are getting unexpected results when rendering, check your white space!" %}
+
 ----------
 
 ## Headings
@@ -190,12 +192,24 @@ Note, many platforms will also support to-do lists following the pattern:
 ```
 [hyperlink](https://www.google.com)
 
+Link:
+<https://www.wikipedia.org/>
+
+Email: 
+<example@email.com>
+
 image: 
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
 ```
 
 [hyperlink](https://www.google.com)
+
+Link:
+<https://www.wikipedia.org/>
+
+Email: 
+<example@email.com>
 
 image: 
 
@@ -215,6 +229,8 @@ example footnote.[^1]
 
 {% endcapture %}
 {% include card.html text=inline %}
+
+*Note:* always be sure to include [high quality alt text](https://www.washington.edu/accesstech/checklist/images/) for your images and descriptive text in your hyperlinks (i.e. don't use ["click here"](https://www.w3.org/QA/Tips/noClickHere))! 
 
 ## Code
 {:.mt-5}
@@ -297,20 +313,51 @@ Tables aren't supported by all Markdown converters, but can be useful for some q
 ```
 Three or more dashes on a line:
 
-----
+-----
 
 ```
 
 Three or more dashes on a line:
 
-----
+-----
 
 {% endcapture %}
 {% include card.html text=hr %}
 
+## HTML 
+{:.mt-5}
+
+Any HTML is also valid in a Markdown file. 
+This is helpful for adding content beyond the simple elements represented by the syntax, for example, embedding an iframe or interactive feature.
+
+Any HTML elements should have a blank line above and below. 
+Avoid any blank lines inside the HTML elements.
+
+Note that Markdown will not be processed inside the HTML tags.
+
 ## Comments
 {:.mt-5}
 
-`<!-- you can use HTML comments, they won't show up -->`
+`<!-- you can use HTML comments, they won't show up visually in outputs -->`
 
-{% include alert.html text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. If you are getting unexpected results when rendering, check your white space!" %}
+## Escaping
+{:.mt-5}
+
+If you ever need to have Markdown ignore a character that would normally be part of the syntax, you can escape with a `\` backslash.
+
+For example, `\*with asterisks\*` will be \*with asterisks\*.
+
+## Markdown Flavors
+{:.mt-5}
+
+It is important to keep in mind that Markdown isn't an 100% formal standard, but comes in "flavors" from various implementations. 
+Each implementation has extensions to the Markdown syntax or extra features they support.
+Some common flavors:
+
+- [CommonMark](https://commonmark.org/) (standardized specification)
+- [GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/) (popular style that can be used any where on GitHub)
+- [R Markdown](https://rmarkdown.rstudio.com/) (RStudio's mix of R code blocks and Markdown)
+- [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) (document-centric extensions)
+
+So exactly what you can include in your Markdown writing depends on what tools you are using to process it.
+If you want your Markdown to be interoperable between tools and platforms, keep to the basics!

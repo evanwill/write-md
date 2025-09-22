@@ -3,33 +3,52 @@ title: Working with Pandoc
 nav: Pandoc
 ---
 
-Pandoc can take an myriad of input formats and produce a equally large variety of outputs. 
-Under the hood "readers" parse an input format into an internal abstract model from which a "writer" then generates the new output format.
-Pandoc aims to make perfect structural conversions from anything that fits within the [Pandoc Markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown)--other conversions might involve loss of formatting. 
+[Pandoc](https://pandoc.org/) is the "universal document converter."
+It can take an myriad of input formats and produce a equally large variety of outputs--which is great for writing with Markdown!
+
+For example, you may write an article in Markdown and use Pandoc to:
+
+- convert it into a DOCX for the required final submission format
+- export a high quality print PDF (using LaTeX)
+- generate an HTML version to paste into a Canvas course
 
 The [Pandoc User's Guide](https://pandoc.org/MANUAL.html) provides the huge range of options, however, you will probably end up using only a handful of commands. 
 
 ## Getting Started
 
-1. On Dillinger, rename your document `test.md` by clicking the "Document Name" area.
-2. Download your `test.md` file from Dillinger by clicking "Export as" > "Markdown". 
-3. Open a terminal in your Downloads folder. 
-    - Windows: open menu and search for "Git Bash" or "powershell" or "CMD"
-    - Mac: Applications > Utilities > Terminal, or launch Spotlight (`Command + spacebar`) and type “Terminal”
-    - Linux: most likely called "Terminal"
-3. In the terminal window, type `pandoc --version` and press return
-4. Next, type `pandoc test.md -o test.html` and press return
-5. Try `pandoc test.md -o test.docx` (write your draft in Markdown, then submit in `.docx`?)
+Check the [installation documentation](https://pandoc.org/installing.html) for how to get it set up on your computer, or the notes the [Resource section]({{ '/content/4-resources.html#install-pandoc' | relative_url }}).
 
-These examples demonstrate the basic anatomy of Pandoc commands:
+Download the ["markdown-demo.md"]({{ '/assets/markdown-demo.md' | relative_url }}) file to provide some demo content.
 
-`pandoc` + input file name + some option flags + `-o` for output + output file name. 
+### Open a Terminal 
+
+Pandoc is a commandline application, so to use it you will need to open a terminal: 
+
+- Windows: open menu and search for "Git Bash" or "powershell" or "CMD"
+- Mac: Applications > Utilities > Terminal, or launch Spotlight (`Command + spacebar`) and type “Terminal”
+- Linux: most likely called "Terminal"
+
+In the terminal window, type `pandoc --version` and press Enter.
+If installed correctly, this should output a version number and some information!
+
+In the terminal window, navigate to your Downloads directory, most likely `cd Downloads`, so that you can try some commands on ["markdown-demo.md"]({{ '/assets/markdown-demo.md' | relative_url }}).
+
+### Convert a File
+
+The basic anatomy of a Pandoc command looks like:
+
+`pandoc` + input file name + some option flags + `-o` + output file name
+
+For example: 
+
+- Convert to a DOCX: `pandoc markdown-demo.md -o markdown-demo.docx`
+- Convert to HTML: `pandoc markdown-demo.md -o markdown-demo.html`
 
 Pandoc will use the extensions of the input and output file names to guess the markup format.
 However, the formats can be specified if necessary, using from `-f` and to `-t` options. 
 For example, `pandoc test.md -f markdown -t html -o test.html`.
 
-## PDFs
+### Generate a PDF
 
 Creating PDF with Pandoc requires LaTeX installed. 
 Pandoc converts the document into LaTeX, then uses LaTeX typesetting engine to output the PDF. 
