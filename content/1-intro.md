@@ -40,7 +40,7 @@ The source code of LaTeX documents are not necessarily easy to read or preview u
 
 Importantly, LaTeX was designed for high quality *PRINT* preparation--unfortunately this means the PDFs it generates are often not accessible by default and might not be the best for digital distribution.
 If you are creating PDFs for courses or learning management systems, you will need to carefully ensure it meets accessibility requirements!
-(See [Accessibility on Resources page]({{ '/content/4-resources.html#accessibility' | relative_url ))
+(See [Accessibility on Resources page]({{ '/content/4-resources.html#accessibility' | relative_url }}))
 
 Some new alternatives have been developing, such as [Typst](https://typst.app/) (or even [LaTeX3](https://www.latex-project.org/latex3/)), to provide a more modern approach.
 
