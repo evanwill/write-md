@@ -42,7 +42,7 @@ Importantly, LaTeX was designed for high quality *PRINT* preparation--unfortunat
 If you are creating PDFs for courses or learning management systems, you will need to carefully ensure it meets accessibility requirements!
 (See [Accessibility on Resources page]({{ '/content/4-resources.html#accessibility' | relative_url }}))
 
-Some new alternatives have been developing, such as [Typst](https://typst.app/) (or even [LaTeX3](https://www.latex-project.org/latex3/)), to provide a more modern approach.
+Some new alternatives have been developing, such as [Typst](https://typst.app/) or [LaTeX3](https://www.latex-project.org/latex3/), to provide a more modern approach.
 
 *You can write content in Markdown and use LaTeX to export print versions...*
 

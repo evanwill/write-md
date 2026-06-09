@@ -190,30 +190,22 @@ Note, many platforms will also support to-do lists following the pattern:
 <hr>
 
 ```
-[hyperlink](https://www.google.com)
+[Hyperlink Text](https://www.google.com)
 
 Link:
 <https://www.wikipedia.org/>
 
 Email: 
 <example@email.com>
-
-image: 
-
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
 ```
 
-[hyperlink](https://www.google.com)
+[Hyperlink Text](https://www.google.com)
 
 Link:
 <https://www.wikipedia.org/>
 
 Email: 
 <example@email.com>
-
-image: 
-
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
 
 --------
 
@@ -231,6 +223,29 @@ example footnote.[^1]
 {% include card.html text=inline %}
 
 *Note:* always be sure to include [high quality alt text](https://www.washington.edu/accesstech/checklist/images/) for your images and descriptive text in your hyperlinks (i.e. don't use ["click here"](https://www.w3.org/QA/Tips/noClickHere))! 
+
+## Images
+{:.mt-5}
+
+Images follow a similar pattern to hyperlinks:
+
+```
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/250px-Markdown-mark.svg.png)
+```
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/250px-Markdown-mark.svg.png)
+
+*Note:* Pandoc Markdown flavor uses the [implicit_figures package](https://pandoc.org/MANUAL.html#extension-implicit_figures), which means the standard `![alt text]` is treated as a figure caption instead. The full Pandoc version looks like:
+
+```
+![figure caption.](image.png){alt="description of image"}
+```
+
+To avoid using Pandoc's version when converting files, use the flag `-f gfm` or `-t gfm` to force treating alt text in the standard way.
+
+{% capture images %}
+{% endcapture %}
+{% include card.html text=images %}
 
 ## Code
 {:.mt-5}
