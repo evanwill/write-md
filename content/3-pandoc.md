@@ -8,9 +8,14 @@ It can take an myriad of input formats and produce a equally large variety of ou
 
 For example, you may write an article in Markdown and use Pandoc to:
 
-- convert it into a DOCX for the required final submission format
+- convert it into a DOCX for the required final submission format or collaborator
 - export a high quality print PDF (using LaTeX)
 - generate an HTML version to paste into a Canvas course
+
+Alternatively, you can take other formats and convert to Markdown:
+
+- convert a DOCX into Markdown for better editing, use with AI, or adding to web project
+- convert an HTML file into easier to edit Markdown
 
 The [Pandoc User's Guide](https://pandoc.org/MANUAL.html) provides the huge range of options, however, you will probably end up using only a handful of commands. 
 
@@ -25,13 +30,13 @@ Download the ["markdown-demo.md"]({{ '/assets/markdown-demo.md' | relative_url }
 Pandoc is a commandline application, so to use it you will need to open a terminal: 
 
 - Windows: open menu and search for "Git Bash" or "powershell" or "CMD"
-- Mac: Applications > Utilities > Terminal, or launch Spotlight (`Command + spacebar`) and type “Terminal”
+- Mac: Applications > Utilities > Terminal, or launch Spotlight (`Command + spacebar`) and type "Terminal"
 - Linux: most likely called "Terminal"
 
 In the terminal window, type `pandoc --version` and press Enter.
 If installed correctly, this should output a version number and some information!
 
-In the terminal window, navigate to your Downloads directory, most likely `cd Downloads`, so that you can try some commands on ["markdown-demo.md"]({{ '/assets/markdown-demo.md' | relative_url }}).
+In the terminal window, navigate to your Downloads directory, most likely `cd Downloads`, so that you can try some commands on "markdown-demo.md".
 
 ### Convert a File
 
@@ -39,15 +44,44 @@ The basic anatomy of a Pandoc command looks like:
 
 `pandoc` + input file name + some option flags + `-o` + output file name
 
-For example: 
+For example: `pandoc markdown-demo.md -o markdown-demo.html`
+
+Pandoc will use the extensions of the input and output file names to guess the markup format.
+However, the formats can be specified if necessary, using ["from"](https://pandoc.org/MANUAL.html#option--from) `-f` and ["to"](https://pandoc.org/MANUAL.html#option--to) `-t` options. 
+For example, `pandoc test.md -f markdown -t html -o test.html`.
+
+#### To Office Docs 
+
+Pandoc is good at converting Markdown to DOCX and ODT (LibreOffice) formats:
 
 - Convert to DOCX: `pandoc markdown-demo.md -o markdown-demo.docx`
 - Convert to ODT: `pandoc markdown-demo.md -o markdown-demo.odt`
-- Convert to HTML: `pandoc markdown-demo.md -o markdown-demo.html`
 
-Pandoc will use the extensions of the input and output file names to guess the markup format.
-However, the formats can be specified if necessary, using from `-f` and to `-t` options. 
-For example, `pandoc test.md -f markdown -t html -o test.html`.
+However, if you have a standard Markdown file and convert to DOCX or ODT you might be surprised to see images with captions in the resulting document.
+Pandoc Markdown flavor treats image markup differently that most web-oriented markdown flavors.
+In CommonMark and GitHub Flavored Markdown image markup looks like `![alt text](image.jpg)`.
+Pandoc uses the [implicit_figures package](https://pandoc.org/MANUAL.html#extension-implicit_figures) which treats the alt text as an image caption.
+To add a different alt text (which is best practice in most cases) you would use following the syntax:
+
+`![figure caption](image.png){alt="description of image"}`
+
+To avoid captions (if you don't want them!), the best option is to specify the "from" format, such as the typical GitHub Flavor Markdown (GFM) `-f gfm`.
+For example: 
+
+`pandoc -f gfm markdown-demo.md -o markdown-demo.docx`
+
+#### To Markdown
+
+Pandoc is also good at converting to Markdown from other formats, so you can edit Markdown instead of some more cumbersome form--or to get simpler text data for use in code and AI projects.
+Keep in mind any complex style formatting will be discarded--which can be helpful in a lot of cases too!
+
+The basic version `pandoc example.docx -o example.md` will generate a Pandoc Flavor Markdown document with hard wrap and escaping--it might look more complicated that the minimal styles explained in this workshop and seen in web-oriented flavors.
+
+To keep it simpler you can use a "to" format option, like `-t gfm`.
+Wrap can be turned off using the option `--wrap=none`.
+For example:
+
+`pandoc example.docx -t gfm --wrap=none example.md`
 
 ### Generate a PDF
 
