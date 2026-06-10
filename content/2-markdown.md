@@ -4,9 +4,10 @@ nav: Basics
 ---
 
 Academic documents are organized using semantic elements such as headings, paragraphs, and lists, which are usually highlighted using different visual features such as font size, font weight, and spacing. 
-Rather than intuitively marking up the semantic sections of your writing with visual features, in a markup language we explicitly tag our content using standardized syntax.
+Rather than intuitively marking sections of your writing with visual features, in a markup language we explicitly tag our content using standardized syntax.
 
 Markdown provides a set of basic conventions to mark this semantic structure more formally, while keeping it simple.
+Check the [Semantics and Accessibility section](#semantics-and-accessibility) for important tips.
 
 Head to the [Demo editor]({{ '/content/5-editor.html' | relative_url }}) or [Dillinger](https://dillinger.io/) web-based editor to practice some Markdown basics.
 
@@ -192,7 +193,7 @@ Note, many platforms will also support to-do lists following the pattern:
 ```
 [Hyperlink Text](https://www.google.com)
 
-Link:
+Bare link:
 <https://www.wikipedia.org/>
 
 Email: 
@@ -201,7 +202,7 @@ Email:
 
 [Hyperlink Text](https://www.google.com)
 
-Link:
+Bare link:
 <https://www.wikipedia.org/>
 
 Email: 
@@ -222,11 +223,10 @@ example footnote.[^1]
 {% endcapture %}
 {% include card.html text=inline %}
 
-*Note:* always be sure to include [high quality alt text](https://www.washington.edu/accesstech/checklist/images/) for your images and descriptive text in your hyperlinks (i.e. don't use ["click here"](https://www.w3.org/QA/Tips/noClickHere))! 
-
 ## Images
 {:.mt-5}
 
+{% capture images %}
 Images follow a similar pattern to hyperlinks:
 
 ```
@@ -235,15 +235,23 @@ Images follow a similar pattern to hyperlinks:
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/250px-Markdown-mark.svg.png)
 
-*Note:* Pandoc Markdown flavor uses the [implicit_figures package](https://pandoc.org/MANUAL.html#extension-implicit_figures), which means the standard `![alt text]` is treated as a figure caption instead. The full Pandoc version looks like:
+The link to the image in the parenthesis will be depend on how you are using the Markdown. 
+On the web it could be a full URL to an image file or relative link to a file in your site.
+For a local document it would be a relative link to file on your computer.
+
+------------
+
+### Pandoc Markdown Images
+
+In Pandoc Markdown flavor the standard `![alt text]` is treated as a figure caption instead (see [implicit_figures package](https://pandoc.org/MANUAL.html#extension-implicit_figures) for more info).
+The full Pandoc image markup looks like:
 
 ```
-![figure caption.](image.png){alt="description of image"}
+![figure caption](image.png){alt="description of image"}
 ```
 
-To avoid using Pandoc's version when converting files, use the flag `-f gfm` or `-t gfm` to force treating alt text in the standard way.
+*This style will not work with most web Markdown flavors / engines.*
 
-{% capture images %}
 {% endcapture %}
 {% include card.html text=images %}
 
@@ -397,7 +405,7 @@ To create useable, accessible documents, be sure to follow best practices for th
 - Write quality alt text for all images
     - Be sure to convey the visual information presented by the image in a clear and concise form.
     - For charts and data visualizations be sure to include a short description of the content, chart type, and purpose. Try to provide the data as a table in addition to the chart.
-    - [Step-by-Step Instructions for Writing Alt Text](https://sc.edu/about/offices_and_divisions/digital-accessibility/toolbox/best_practices/alternative_text/step-by-step-instructions-alt-text/index.php), University of South Carolina
+    - See [Step-by-Step Instructions for Writing Alt Text](https://sc.edu/about/offices_and_divisions/digital-accessibility/toolbox/best_practices/alternative_text/step-by-step-instructions-alt-text/index.php) (University of South Carolina) or [Digital Accessibility Guide - Images](https://www.washington.edu/accesstech/guide/images/) (University of Washington).
 - Use descriptive text in hyperlinks
-    - Never create a link with "click here"!
+    - Never create a link with ["click here"](https://www.w3.org/QA/Tips/noClickHere)!
     - Readers eyes jump to links in text, be sure to make the content meaningful.
