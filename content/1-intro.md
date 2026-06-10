@@ -93,4 +93,5 @@ Originally developed in 2004 by John Gruber with Aaron Swartz based on how peopl
 Markdown files are plaintext, usually with the extension `.md`, and can be edited by any text editor.
 Think of it as source code for your document, that can be compiled to generate outputs such as HTML, .docx, or PDF.
 
-Because of it's simplicity and flexibility, a growing number of websites, note taking apps, code notebooks, and publishing systems use Markdown to format content, making it a powerful, cross-platform option for academic writing--there are applications through out the research and publishing ecosystem! 
+Because of it's simplicity and flexibility, a huge number of websites, note taking apps, code notebooks, and publishing systems use Markdown to format content, and it has become a defacto standard for content input and output interacting with LLMs.
+This makes Markdown a powerful, cross-platform option for academic writing--there are applications through out the research and publishing ecosystem! 

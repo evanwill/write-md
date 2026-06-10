@@ -14,7 +14,7 @@ For example, you may write an article in Markdown and use Pandoc to:
 
 Alternatively, you can take other formats and convert to Markdown:
 
-- convert a DOCX into Markdown for better editing, use with AI, or adding to web project
+- convert a DOCX into Markdown for better editing, use with LLMs, or adding to web project
 - convert an HTML file into easier to edit Markdown
 
 The [Pandoc User's Guide](https://pandoc.org/MANUAL.html) provides the huge range of options, however, you will probably end up using only a handful of commands. 
@@ -72,7 +72,7 @@ For example:
 
 #### To Markdown
 
-Pandoc is also good at converting to Markdown from other formats, so you can edit Markdown instead of some more cumbersome form--or to get simpler text data for use in code and AI projects.
+Pandoc is also good at converting to Markdown from other formats, so you can edit Markdown instead of some more cumbersome form--or to get simpler text data for use in code and LLM projects.
 Keep in mind any complex style formatting will be discarded--which can be helpful in a lot of cases too!
 
 The basic version `pandoc example.docx -o example.md` will generate a Pandoc Flavor Markdown document with hard wrap and escaping--it might look more complicated that the minimal styles explained in this workshop and seen in web-oriented flavors.
